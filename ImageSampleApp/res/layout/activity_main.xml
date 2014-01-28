@@ -19,6 +19,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/dubai_fireworks_2014"
         android:layout_below="@id/textview1"
-        android:contentDescription="@string/dubai_fireworks_2014"
+        android:contentDescription="Dubai Fireworks 2014"
         />
 </RelativeLayout>
