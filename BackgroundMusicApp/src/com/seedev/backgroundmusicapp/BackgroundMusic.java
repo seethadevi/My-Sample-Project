@@ -11,7 +11,6 @@ public class BackgroundMusic extends Activity {
 	public static final String TAG = "BackgroundMusic APP";
 
 	// Create MediaPlayer object;
-
 	MediaPlayer myPlayer;
 
 	@Override
@@ -20,8 +19,10 @@ public class BackgroundMusic extends Activity {
 		setContentView(R.layout.activity_background_music);
 		Log.d(TAG, "onCreate");
 	}
+
 	/*
-	 * During onResume event , we have to get the resource and start the media player. 
+	 * During onResume event , we have to get the resource and start the media
+	 * player.
 	 */
 	@Override
 	protected void onResume() {
@@ -37,16 +38,18 @@ public class BackgroundMusic extends Activity {
 	}
 
 	/*
-	 * During onPause event , we have to stop paly the music & also release the resource. 
+	 * During onPause event , we have to stop palying the music & also release
+	 * the resource.
 	 */
 	@Override
 	protected void onPause() {
 		Log.d(TAG, "onPause");
 		if (myPlayer != null) {
-			if (myPlayer.isPlaying()) {//To Check whether mediaplayer is playing or not.
+			if (myPlayer.isPlaying()) {// To Check whether mediaplayer is
+										// playing or not.
 				// Stops playback after playback has been stopped or paused.
 				myPlayer.stop();
-				// After release media object no longer available.
+				// After release(), the media object no longer available.
 				myPlayer.release();
 			}
 		}
