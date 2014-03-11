@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"/>
+
+    <!-- The Templates -->
+    <script type="text/template" id="home">
+
+        <div data-role="header">
+            <h1>Rail Info</h1>
+        </div>
+
+        <div data-role="content">
+            <!--h3>Application Template for using Backbone.js and jQuery Mobile.</h3>
+            <p>Backbone.js is used for code organization (Models, Views) and "routing".</p>
+            <p>jQuery Mobile is used for its mobile styles and widgets. The routing and navigation capabilities of jQuery Mobile are disbled to let Backbone.js handle these requirements.</p>
+            <p>This is the Home page. It was created dynamically using an underscore.js template.</p-->
+            <p>Navigate to:</p>
+            <ul data-role="listview"  data-inset="true">
+                <li><a href="#page1">Find Trains</a></li>
+                <li><a href="#page2">Latest Search</a></li>
+                <li><a href="#page3">All Trains</a></li>
+                <li><a href="#page4">About Us</a></li>
+            </ul>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="page1">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>Find Trains</h1>
+        </div>
+
+        <div data-role="content">
+            <!-- p>This is Page 1. It was created dynamically using an underscore.js template.</p>
+            <p>Navigate to:</p>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#">Home</a></li>
+                <li><a href="#page2">Page 2</a></li>
+            </ul -->
+            
+                
+
+
+<ul data-role="listview" data-filter="true"  data-filter-reveal="true" data-filter-placeholder="Search from Station..."  data-inset="true">
+    <li><a href="#">Velacherry</a></li>
+    <li><a href="#">Perungudi</a></li>
+    <li><a href="#">Tharamani</a></li>
+    <li><a href="#">Thiruvanmiyur</a></li>
+    <li><a href="#">Indira Nagar</a></li>
+    <li><a href="#">Kotturpuram</a></li>
+    <li><a href="#">Greenways Road</a></li>
+    <li><a href="#">Mandaveli</a></li>
+    <li><a href="#">Thirumayilai</a></li>
+    <li><a href="#">Light House</a></li>
+    <li><a href="#">Thiruvallikeni</a></li>
+    <li><a href="#">Chepak</a></li>
+    <li><a href="#">Chintadripet</a></li>
+    <li><a href="#">Park Town</a></li>
+    <li><a href="#">Chennai Fort</a></li>
+    <li><a href="#">Chennai Beach</a></li>
+    
+</ul>
+
+        </div>
+
+    </script>
+
+    <script type="text/template" id="page2">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>Latest Search</h1>
+        </div>
+
+        <div data-role="content">
+            <p>This is Page under construction.</p>
+        </div>
+
+    </script>
+    
+    <script type="text/template" id="page3">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>All Trains</h1>
+        </div>
+
+        <div data-role="content">
+            <p>This is Page under construction.</p>
+        </div>
+
+    </script>
+
+    <script type="text/template" id="page4">
+
+        <div data-role="header">
+            <a href="#" data-icon="back" class="back ui-btn-left">Back</a>
+            <h1>About Us</h1>
+        </div>
+
+        <div data-role="content">
+            <p>This is Page under construction.</p>
+        </div>
+
+    </script>
+
+    <!-- The Scripts -->
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="js/jqm-config.js"></script>
+    <script src="lib/jquery.mobile-1.0.1.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/findtrains.js"></script>
+</head>
+
+<body></body>
+
+</html>
